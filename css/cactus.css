@@ -1,0 +1,223 @@
+
+/*! cactus.css v0.0.1  */
+
+@import "_reset.css";
+
+:root {
+  /* Colours */
+  --c-text: #222222;
+  --c-gray-mid: #e2e8f0;
+  --c-gray-light: #f1f5f9;
+  --c-background: #ffffff;
+
+  /* Typography  */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  --fs-body: clamp(1.6rem, 4.3vmin, 2rem);
+  --fs-small: calc(clamp(1.2rem, 4.3vmin, 1.6rem) * 0.9);
+  --fs-x-small: calc(clamp(1rem, 4.3vmin, 1.4rem) * 0.9);
+  --fs-x-small: calc(clamp(0.875rem, 4.3vmin, 1.2rem) * 0.9);
+  --fs-h1: clamp(3.2rem, 8.5vmin, 5.4rem);
+  --fs-h2: clamp(2.8rem, 7.5vmin, 4.8rem);
+  --fs-h3: clamp(2.6rem, 7vmin, 4rem);
+  --fs-h4: clamp(2.4rem, 6.5vmin, 3.2rem);
+  --fs-h5: clamp(2.1rem, 5.6vmin, 2.4rem);
+  --fs-h6: clamp(1.8rem, 4.8vmin, 2.1rem);
+  --lh-body: 1.375;
+  --lh-heading: 1.25;
+
+  /* Widths */
+  --content-max-width: 35em;
+
+  /* Spacing */
+  --spacing: clamp(2rem, 3rem, 4rem);
+  --radius: clamp(0.5rem, 0.5rem, 0.75rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Colours */
+    --c-text: #ffffff;
+    --c-gray-mid: #374151;
+    --c-gray-light: #1f2937;
+    --c-background: #222222;
+  }
+}
+
+html {
+  font-size: max(62.5%, 0.5vw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--c-background);
+  box-sizing: border-box;
+  color: var(--c-text);
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  padding: var(--spacing);
+}
+
+.container {
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: var(--lh-heading);
+  margin: var(--spacing) 0 var(--spacing);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+h4 {
+  font-size: var(--fs-h4);
+}
+h5 {
+  font-size: var(--fs-h5);
+}
+h6 {
+  font-size: var(--fs-h6);
+}
+
+p {
+  margin: 0 0 var(--spacing) 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+    font-size: var(--fs-xx-small);
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+/* Figures */
+figure {
+  margin: calc(var(--spacing) * 1.5) 0;
+}
+
+figure.bleed {
+  margin: calc(var(--spacing) * 1.5) calc(var(--spacing) * -1);
+}
+
+figure > figcaption {
+  font-size: var(--fs-small);
+  text-align: center;
+}
+
+figure > figcaption > cite {
+  display: block;
+  margin-top: calc(var(--spacing) * 0.1);
+  font-size: var(--fs-xsmall);
+}
+
+/* Horizontal Rule */
+hr {
+  display: block;
+  border: 0;
+  height: 0;
+  margin: var(--spacing) 0 var(--spacing);
+  border-bottom: 0.25rem solid var(--c-gray-mid);
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-decoration-color: var(--c-text);
+  text-underline-offset: calc(var(--spacing) * 0.1);
+  font-weight: 500;
+  color: var(--c-text);
+}
+
+@media (hover: hover) {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+a:focus,
+a:active {
+  background-color: var(--c-text);
+  color: var(--c-background);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  font-weight: 700;
+  background-color: var(--c-gray-light);
+}
+
+table td,
+table th {
+  padding: calc(var(--spacing) * 0.25);
+  border: solid 1px var(--c-gray-mid);
+}
+
+/* Lists */
+ol,
+ul {
+  list-style: initial;
+  margin: 0 0 var(--spacing) var(--spacing);
+}
+
+ol {
+  list-style: number;
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* Footer */
+footer {
+  border-top: solid 0.1rem var(--c-gray-mid);
+  margin-top: calc(var(--spacing) * 2);
+  padding-top: var(--spacing);
+  font-size: var(--fs-x-small);
+}
+
+footer p {
+      margin: 0 0 calc(var(--spacing) * .5) 0;
+}

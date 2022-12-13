@@ -1,0 +1,30 @@
+{
+    "name": "cactus.css",
+    "version": "0.0.1",
+    "description": "Just add HTML CSS framework",
+    "main": "index.js",
+    "scripts": {
+        "dev": "postcss css/cactus.css --dir dist --watch --verbose",
+        "build": "NODE_ENV=production postcss css/cactus.css --dir dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chrissy-dev/cactus.css.git"
+    },
+    "keywords": [
+        "css",
+        "html"
+    ],
+    "author": "Chris Collins",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/chrissy-dev/cactus.css/issues"
+    },
+    "homepage": "https://github.com/chrissy-dev/cactus.css#readme",
+    "devDependencies": {
+        "cssnano": "^5.1.14",
+        "postcss": "^8.4.20",
+        "postcss-cli": "^10.1.0",
+        "postcss-import": "^15.1.0"
+    }
+}

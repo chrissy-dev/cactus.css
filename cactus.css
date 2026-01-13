@@ -198,3 +198,29 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;
 }
+
+
+/* =========================
+   Code & Code Blcks
+   ========================= */
+code {
+    font-family: var(--mono);
+    font-size: 0.9em;
+    background: var(--muted);
+    padding: 0.15em 0.3em;
+    border-radius: calc(var(--radius) * 0.75);
+}
+
+pre {
+    margin: calc(var(--space) * 1.5) 0;
+    padding: var(--space);
+    background: var(--muted);
+    overflow-x: auto;
+    border-radius: var(--radius);
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.9em;
+}

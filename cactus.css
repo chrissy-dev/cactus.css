@@ -90,3 +90,22 @@ html {
 body {
   margin: 0;
 }
+
+
+/* =========================
+   Base layout
+   ========================= */
+body {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--leading-body);
+    color: var(--foreground);
+    background: var(--background);
+    padding: calc(var(--space) * 2) var(--space);
+}
+
+main,
+article {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-density="compact" data-width="wide" data-theme="light">
+<html lang="en" data-density="compact" data-width="narrow" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cactus.css | Just add some HTML</title>
-    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌵</text></svg>">
     <link rel="stylesheet" href="../cactus.css">
 </head>
 
 <body>
     <h1 id="cactus-css">Cactus CSS</h1>
+    <nav inline><a href="/">Home</a><a href="https://github.com/chrissy_dev">@chrissy_dev</a></nav>
     <p>Cactus is a small, classless CSS stylesheet for content-first HTML. It is designed to make rendered Markdown look clean, readable, and calm by default.</p>
     <p>This document exists to demonstrate how common Markdown elements are styled.</p>
     <hr>
@@ -98,16 +99,18 @@
     <p>Tables should remain readable on smaller screens.</p>
     <hr>
     <h2 id="images">Images</h2>
-    <p><img src="https://via.placeholder.com/800x400" alt="Placeholder image"></p>
+    <p><img src="https://picsum.photos/seed/picsum/600/400" alt="Placeholder image"></p>
     <p>Images should scale with the container and not overflow.</p>
+    <figure>
+        <img src="https://picsum.photos/seed/figure/600/400" alt="Placeholder image in figure">
+        <figcaption>Figure 1: An example of an image with a caption.</figcaption>
+    </figure>
     <hr>
     <h2 id="horizontal-rule">Horizontal rule</h2>
     <hr>
     <h2 id="final-notes">Final notes</h2>
     <p>This stylesheet intentionally avoids layout, components, or utilities. It focuses on sensible defaults for content and documentation.</p>
     <p>Use it as a starting point, not a framework.</p>
-
-
 </body>
 
 </html>

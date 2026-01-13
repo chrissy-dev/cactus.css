@@ -321,3 +321,23 @@ footer a {
   color: var(--muted-foreground);
   text-decoration: underline;
 }
+
+/* =========================
+   Inline Nav
+   ========================= */
+nav[inline] {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: calc(var(--space) * 1);
+    padding-top: calc(var(--space) * 1);
+    display: flex;
+    gap: calc(var(--space) * 1);
+    flex-wrap: wrap;
+    line-height: 1.15;
+    margin-bottom: calc(var(--space) * 2);
+}
+
+nav[inline] a {
+    color: var(--accent);
+    font-weight: 500;
+}

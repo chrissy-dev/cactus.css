@@ -246,3 +246,24 @@ th {
     background: var(--muted);
     font-weight: 600;
 }
+
+/* =========================
+   Media
+   ========================= */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: calc(var(--space) * 1.5) 0;
+}
+
+figure {
+    margin: calc(var(--space) * 1.5) 0;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: var(--muted-foreground);
+    text-align: center;
+    margin-top: 0.5em;
+}

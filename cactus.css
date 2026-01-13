@@ -184,3 +184,17 @@ li > ol {
   margin-top: 0.25em;
   margin-bottom: 0.5em;
 }
+
+/* =========================
+   Blockquote
+   ========================= */
+blockquote {
+  margin: calc(var(--space) * 1.5) 0;
+  padding-left: var(--space);
+  border-left: 3px solid var(--border);
+  color: var(--muted-foreground);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}

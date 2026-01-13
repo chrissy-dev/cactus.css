@@ -114,7 +114,6 @@ article {
 /* =========================
    Typography
    ========================= */
-
 h1,
 h2,
 h3,
@@ -165,4 +164,23 @@ a {
     a:hover {
         text-decoration: none;
     }
+}
+
+/* =========================
+   Lists
+   ========================= */
+ul,
+ol {
+  margin: 0 0 var(--space) calc(var(--space) * 1.5);
+  padding: 0;
+}
+
+li {
+  margin: 0.25em 0;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
 }

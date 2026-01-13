@@ -150,3 +150,19 @@ del {
     text-decoration: line-through;
     color: var(--muted-foreground);
 }
+
+/* =========================
+   Links
+   ========================= */
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.15em;
+}
+
+@media (hover: hover) {
+    a:hover {
+        text-decoration: none;
+    }
+}
